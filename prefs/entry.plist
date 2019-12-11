@@ -9,13 +9,13 @@
 		<key>cell</key>
 		<string>PSLinkCell</string>
 		<key>detail</key>
-		<string>bruhTMRootListController</string>
+		<string>gayTMRootListController</string>
 		<key>icon</key>
 		<string>icon.png</string>
 		<key>isController</key>
 		<true/>
 		<key>label</key>
-		<string>BruhKeysTM</string>
+		<string>gayKeysTM</string>
 	</dict>
 </dict>
 </plist>

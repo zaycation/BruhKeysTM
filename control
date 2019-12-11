@@ -1,9 +1,9 @@
-Package: com.tr1fectaandcameren.bruhkeystm
-Name: BruhKeysTM
+Package: dev.zaycation.gaykeystm
+Name: gayKeysTM
 Depends: mobilesubstrate
 Version: 1.0.1
 Architecture: iphoneos-arm
-Description: BruhKeysTM, The official BruhKeys! Copyright: Cameren & Tr1Fecta
-Maintainer: Cameren & Tr1Fecta 
-Author: Cameren & Tr1Fecta
+Description: every key GAY! Copyright: zaycation.dev
+Maintainer: zaycation.dev
+Author: Cameren & Tr1Fecta & zaycation.dev
 Section: Tweaks

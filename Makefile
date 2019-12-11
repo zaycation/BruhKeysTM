@@ -5,11 +5,11 @@ include $(THEOS)/makefiles/common.mk
 
 ARCHS = arm64 arm64e
 
-TWEAK_NAME = BruhKeys
+TWEAK_NAME = gayKeys
 
-BruhKeys_FILES = Tweak.xm
-BruhKeys_CFLAGS = -fobjc-arc
-BruhKeys_EXTRA_FRAMEWORKS = Cephei
+gayKeys_FILES = Tweak.xm
+gayKeys_CFLAGS = -fobjc-arc
+gayKeys_EXTRA_FRAMEWORKS = Cephei
 SUBPROJECTS += prefs
 
 include $(THEOS_MAKE_PATH)/tweak.mk

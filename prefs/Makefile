@@ -5,7 +5,7 @@ ARCHS = arm64 arm64e
 
 BUNDLE_NAME = prefs
 
-prefs_FILES = bruhTMRootListController.m
+prefs_FILES = gayTMRootListController.m
 prefs_INSTALL_PATH = /Library/PreferenceBundles
 prefs_FRAMEWORKS = UIKit
 prefs_PRIVATE_FRAMEWORKS = Preferences

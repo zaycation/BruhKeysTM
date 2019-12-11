@@ -3,13 +3,13 @@
 
 @interface UIKeyboardLayoutStar : UIView
 // Create new property for AVAudioPlayer and retain it. 
-@property (nonatomic, retain) AVAudioPlayer* bruhPlayer;
+@property (nonatomic, retain) AVAudioPlayer* gayPlayer;
 @end
 
 // hook the UIKeyboardLayoutStar view
 %hook UIKeyboardLayoutStar
 // Add the property to the UIKeyboardLayoutStar class because it doesn't exist :DD
-%property (nonatomic, retain) AVAudioPlayer* bruhPlayer;
+%property (nonatomic, retain) AVAudioPlayer* gayPlayer;
 
 -(instancetype)initWithFrame:(CGRect)frame {
     if ((self = %orig)) {
@@ -18,13 +18,13 @@
         gestureRecognizer.cancelsTouchesInView = NO;
         [self addGestureRecognizer:gestureRecognizer];
 
-		// Make a string with the file path of the mp3 bruh sound file and create a NSURL of it
-		NSString* bruhFilePath = @"/Library/Application Support/BruhKeysTM/bruhSound.mp3";
-		NSURL* bruhFileURL = [NSURL fileURLWithPath:bruhFilePath];
+		// Make a string with the file path of the mp3 sound file and create a NSURL of it
+		NSString* gayFilePath = @"/Library/Application Support/gayKeysTM/gaySound.mp3";
+		NSURL* gayFileURL = [NSURL fileURLWithPath:gayFilePath];
 
-		// Init the bruhPlayer, set its volume
-		self.bruhPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:bruhFileURL error:nil];
-		self.bruhPlayer.volume = 1;
+		// Init the gayPlayer, set its volume
+		self.gayPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:gayFileURL error:nil];
+		self.gayPlayer.volume = 1;
      }
      return self;
 
@@ -33,11 +33,11 @@
 // %new because the method doesn't exist in the class 
 %new
 -(void)onKeyboardTouch:(UITapGestureRecognizer *)gestureRecognizer {
-	// Rewind the current time of the bruhPlayer back to 0, if the old sound was still playing :D
-	self.bruhPlayer.currentTime = 0;
-	// In the next 2 methods we prepare the bruhPlayer to play and actually play it, the prepare one is needed for less lag between playing and clicking a key on the keyboard
-	[self.bruhPlayer prepareToPlay];
-	[self.bruhPlayer play];
+	// Rewind the current time of the gayPlayer back to 0, if the old sound was still playing :D
+	self.gayPlayer.currentTime = 0;
+	// In the next 2 methods we prepare the gayPlayer to play and actually play it, the prepare one is needed for less lag between playing and clicking a key on the keyboard
+	[self.gayPlayer prepareToPlay];
+	[self.gayPlayer play];
     
 }
 
